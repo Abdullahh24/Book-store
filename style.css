@@ -1,0 +1,247 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background-color: #343a40; 
+    color: white;
+    padding: 1rem;
+    text-align: left; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #dee2e6; 
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); 
+}
+
+
+.toolbar {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem; 
+    align-items: center;
+}
+
+.toolbar input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    flex-grow: 1; 
+}
+
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.btn-search {
+    background-color: #007bff;
+    color: white;
+    border-color: #76cbff;
+}
+.btn-search:hover { background-color: #0056b3; }
+
+.btn-new {
+    background-color: #28a745; 
+    color: white;
+    border-color: #9fffb5;
+}
+.btn-new:hover { background-color: #1e7e34; }
+
+.btn-details {
+    background-color: #17a2b8; 
+    color: white;
+    border-color: #9af2ff;
+}
+.btn-details:hover { background-color: #117a8b; }
+
+.btn-update, .btn-edit { 
+    background-color: #ffee00; 
+    color: #212529; 
+    border-color: #ffc107;
+}
+.btn-update:hover, .btn-edit:hover { background-color: #d39e00; }
+
+.btn-delete, .btn-confirm-delete { 
+    background-color: #ff0019; 
+    color: white;
+    border-color: #dc3545;
+}
+.btn-delete:hover, .btn-confirm-delete:hover { background-color: #bd2130; }
+
+.btn-submit {
+     background-color: #003cff; 
+     color: white;
+}
+.btn-submit:hover { background-color: #0056b3; }
+
+.btn-back, .btn-cancel-delete {
+     background-color: #6c757d; 
+     color: white;
+     border-color: #6c757d;
+}
+.btn-back:hover, .btn-cancel-delete:hover { background-color: #545b62; }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #969696; 
+    vertical-align: middle;
+}
+
+thead th {
+    background-color: #e9ecef; 
+    border-top: 1px solid #dee2e6;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+tbody tr:hover {
+    background-color: #ffffff; 
+}
+
+td .btn {
+    margin-right: 0.3rem;
+    margin-bottom: 0.2rem; 
+    padding: 0.3rem 0.6rem; 
+    font-size: 0.8rem;
+}
+
+
+.pagination {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.pagination span {
+    margin-right: 1rem;
+    color: #6c757d; 
+    font-size: 0.9rem;
+}
+
+.pagination button {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    color: #007bff; 
+    padding: 0.375rem 0.75rem;
+    margin-left: 0.25rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.pagination button:hover {
+    background-color: #e9ecef;
+}
+
+.pagination button:disabled {
+    background-color: #007bff; 
+    color: white;
+    border-color: #007bff;
+    cursor: default;
+}
+
+
+#add-book-form label,
+#update-book-form label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+#add-book-form input[type="text"],
+#add-book-form input[type="number"],
+#update-book-form input[type="text"],
+#update-book-form input[type="number"] {
+    width: calc(100% - 1rem); 
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+#add-book-form br,
+#update-book-form br {
+    display: none; 
+}
+
+#add-book-form .btn,
+#update-book-form .btn {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+
+
+.details-grid {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    gap: 0.5rem 1rem; 
+}
+
+.details-grid div {
+    padding: 0.25rem 0;
+}
+
+
+.modal {
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 110%;
+    height: 110%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.modal-content p {
+    margin-bottom: 1.5rem;
+}
+
+.modal-content .btn {
+    margin: 0 0.5rem;
+}
